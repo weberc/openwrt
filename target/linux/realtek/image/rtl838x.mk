@@ -12,6 +12,16 @@ define Device/allnet_all-sg8208m
 endef
 TARGET_DEVICES += allnet_all-sg8208m
 
+define Device/allnet_all-sg8316m
+  SOC := rtl8382
+  IMAGE_SIZE := 7168k
+  DEVICE_VENDOR := ALLNET
+  DEVICE_MODEL := ALL-SG8316M
+  UIMAGE_MAGIC := 0x00000006
+  UIMAGE_NAME := 2.2.2.0
+endef
+TARGET_DEVICES += allnet_all-sg8316m
+
 define Device/apresia_aplgs120gtss
   $(Device/cameo-fw)
   SOC := rtl8382
